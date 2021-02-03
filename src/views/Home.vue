@@ -5,7 +5,7 @@
       <p>Nous sommes désolés, nous ne sommes pas en mesure de récupérer ces informations pour le moment. Veuillez réessayer ultérieurement.</p>
     </section>
 
-    <section v-else>
+    <section class="container-card" v-else>
 
       <div v-if="loading">Chargement...</div>
 
@@ -69,9 +69,10 @@ export default {
 </script>
 
 <style scoped>
-  .home {
+  .container-card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    align-items: center;
     gap: 1rem;
     padding: 1rem;
   }
